@@ -1,0 +1,111 @@
+{
+  // Appearance
+  "window.autoDetectColorScheme": true,
+  "editor.fontFamily": "'Ubuntu Sans Mono', monospace",
+  "workbench.productIconTheme": "fluent-icons",
+  "workbench.iconTheme": "material-icon-theme",
+  // Editor
+  "editor.cursorBlinking": "expand",
+  "editor.stickyScroll.enabled": true,
+  "editor.linkedEditing": true,
+  "editor.bracketPairColorization.enabled": true,
+  "editor.guides.bracketPairs": "active",
+  "editor.inlayHints.enabled": "offUnlessPressed",
+  // Fallback para archivos nuevos. Uno ya escrito conserva su indentación (2, 4, 6 u 8 espacios).
+  "editor.detectIndentation": true,
+  "editor.tabSize": 2,
+  "editor.insertSpaces": true,
+  // Ubuntu Sans Mono no trae ligaduras. Actívalo solo si cambias a una fuente como Fira Code.
+  "editor.fontLigatures": false,
+  // Terminal
+  "terminal.integrated.fontFamily": "'MesloLGS NF', monospace",
+  "terminal.integrated.scrollback": 10000,
+  // Tabs
+  "workbench.editor.enablePreview": false,
+  "workbench.editor.highlightModifiedTabs": true,
+  "js/ts.updateImportsOnFileMove.enabled": "always",
+  // Files
+  "files.insertFinalNewline": true,
+  "files.trimTrailingWhitespace": true,
+  "files.autoSave": "onFocusChange",
+  // Explorer
+  "explorer.confirmDelete": false,
+  "explorer.confirmDragAndDrop": false,
+  "explorer.confirmPasteNative": false,
+  "explorer.fileNesting.enabled": true,
+  "explorer.fileNesting.patterns": {
+    "*.ts": "${capture}.test.ts, ${capture}.spec.ts",
+    "*.tsx": "${capture}.test.tsx, ${capture}.spec.tsx",
+    "*.js": "${capture}.test.js, ${capture}.spec.js",
+    "*.jsx": "${capture}.test.jsx, ${capture}.spec.jsx",
+    "tsconfig.json": "tsconfig.*.json",
+    "package.json": "package-lock.json, pnpm-lock.yaml, yarn.lock, bun.lock"
+  },
+  // Git
+  "git.confirmSync": false,
+  "git.enableSmartCommit": true,
+  "git.autofetch": true,
+  // Search
+  "search.exclude": {
+    "**/node_modules": true,
+    "**/dist": true,
+    "**/build": true,
+    "**/coverage": true,
+    "**/.next": true,
+    "**/playwright-report": true,
+    "**/test-results": true
+  },
+  // Format
+  "editor.formatOnSave": true,
+  // Oxfmt formatea el archivo completo. "modificationsIfAvailable" requiere Format Selection.
+  "editor.formatOnSaveMode": "file",
+  "editor.defaultFormatter": "oxc.oxc-vscode",
+  "[json]": {
+    "editor.defaultFormatter": "oxc.oxc-vscode"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "[markdown]": {
+    "editor.defaultFormatter": "oxc.oxc-vscode"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "oxc.oxc-vscode",
+    "editor.codeActionsOnSave": {
+      "source.organizeImports": "explicit"
+    }
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "oxc.oxc-vscode",
+    "editor.codeActionsOnSave": {
+      "source.organizeImports": "explicit"
+    }
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "oxc.oxc-vscode",
+    "editor.codeActionsOnSave": {
+      "source.organizeImports": "explicit"
+    }
+  },
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "oxc.oxc-vscode",
+    "editor.codeActionsOnSave": {
+      "source.organizeImports": "explicit"
+    }
+  },
+  "[python]": {
+    "editor.defaultFormatter": "charliermarsh.ruff",
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+      "source.fixAll.ruff": "explicit",
+      "source.organizeImports.ruff": "explicit"
+    }
+  },
+  // Cursor
+  "cursor.composer.queueMessageDefaultBehavior": "steer",
+  "cursor.cpp.disabledLanguages": [
+    "plaintext"
+  ],
+  // Docker
+  "dev.containers.dockerPath": "/home/fernando/.local/bin/docker"
+}
